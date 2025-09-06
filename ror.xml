@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://www.the2048game.in/</title>
+  <link>https://www.the2048game.in/</link>
+
+<item>
+     <link>https://www.the2048game.in/</link>
+     <title>The 2048 Game - Play online at the2048game.in</title>
+     <description>Play the 2048 game online, join the numbers and get to the 2048 tile!</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.the2048game.in/about-us.html</link>
+     <title>About Us - the2048game.in</title>
+     <description>about us</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.the2048game.in/how-to-play-2048-game.html</link>
+     <title>How to play 2048 game - the2048game.in</title>
+     <description>how to play 2048 game</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.the2048game.in/tips-and-tricks.html</link>
+     <title>2048 Game Tips &amp; Tricks - the2048game.in</title>
+     <description>2048 Game Tips &amp; Tricks</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.the2048game.in/privacy-policy.html</link>
+     <title>Privacy Policy - the2048game.in</title>
+     <description>Privacy Policy</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.the2048game.in/terms-conditions.html</link>
+     <title>Terms &amp; Conditions - the2048game.in</title>
+     <description>Terms &amp; Conditions</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://the2048game.in/games/</link>
+     <title>Play Games Online</title>
+     <description>Games</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.the2048game.in/</loc>
+  <lastmod>2020-09-06T15:34:32+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.the2048game.in/about-us.html</loc>
+  <lastmod>2020-09-06T15:34:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.the2048game.in/how-to-play-2048-game.html</loc>
+  <lastmod>2020-09-06T15:34:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.the2048game.in/tips-and-tricks.html</loc>
+  <lastmod>2020-09-06T15:34:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.the2048game.in/privacy-policy.html</loc>
+  <lastmod>2020-09-06T15:34:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.the2048game.in/terms-conditions.html</loc>
+  <lastmod>2020-09-06T15:34:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://the2048game.in/games/</loc>
+  <lastmod>2024-09-06T15:34:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

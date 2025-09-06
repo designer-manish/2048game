@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^the2048game\.in$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.the2048game\.in$
+RewriteRule ^loan\/?$ "https\:\/\/www\.loan\.the2048game\.in\/" [R=301,L]
+
