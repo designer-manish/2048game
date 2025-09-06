@@ -52,14 +52,6 @@
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
-<item>
-     <link>https://the2048game.in/games/</link>
-     <title>Play Games Online</title>
-     <description>Games</description>
-     <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
 </channel>
 </rss>
   
