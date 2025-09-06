@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>The 2048 Game - Play online at the2048game.in</title>
+  <meta name="description" content="Play the 2048 game online, join the numbers and get to the 2048 tile!">
+  <meta name="keywords" content="the 2048 game, 2048 game, the game of 2048, 2048 game cool math, 2048 cool math games, 2048 game online, 2048 game unblocked, 2048 game to play, 2048 game download">
+  
+<link rel="shortcut icon" href="favicon.png">
+<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link href="style/main.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta http-equiv='content-language' content='en-gb'>
+
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" data-new-gr-c-s-check-loaded="14.984.0" data-gr-ext-installed="">
+  <!-- main  -->
+<main class="wrapper">
+ <!-- intro -->
+ <div class="intro clearfix">
+  <h1 class="intro_title"> The 2048 Game </h1>
+ </div>
+ <!-- /end intro -->
+ <!-- controls -->
+ <div class="controls clearfix">
+  <div class="controls_game">
+   <button data-js="newGame" class="controls_game-btn"> New Game </button>
+  </div>
+  <div class="controls_score">
+   <span class="controls_score-label">Score </span>
+   <br><br>
+   <span class="controls_score-text" data-js="score">0</span>
+  </div>
+ </div>
+ <!-- gameboard -->
+ <div id="touchGameboard" class="gameboard" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+  <div class="grid">
+ <div class="grid_cell"></div>
+
+ <div class="grid_cell"></div>
+
+ <div class="grid_cell"></div>
+
+ <div class="grid_cell"></div>
+
+ <div class="grid_cell"></div>
+
+ <div class="grid_cell"></div>
+
+ <div class="grid_cell"></div>
+
+ <div class="grid_cell"></div>
+
+ <div class="grid_cell"></div>
+
+ <div class="grid_cell"></div>
+
+ <div class="grid_cell"></div>
+
+ <div class="grid_cell"></div>
+
+ <div class="grid_cell"></div>
+
+ <div class="grid_cell"></div>
+
+ <div class="grid_cell"></div>
+
+ <div class="grid_cell"></div>
+</div>
+  <div class="tile-container">
+ <div class="tile" data-x="75" data-y="75">
+  <span class="tile_number" data-value="2">2</span>
+ </div>
+</div>
+ </div>
+ <!-- /end gameboard -->
+ <!-- guide     -->
+
+ <!-- /end guide  -->
+</main>
+<!-- /end main  -->
+
+<!-- templates -->
+	<script type="text/html" id="template_grid_cell">
+     <div class="grid_cell"></div>
+    </script>
+	<script type="text/html" id="template_tile">
+     <div class="tile">
+      <span class="tile_number"> </span>
+     </div>
+    </script>
+<!-- /end templates -->
+    <script src="js/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/lodash.js"></script>
+    <script src="js/hammer.js"></script>
+    <script src="js/2024.js"></script>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174943909-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-174943909-1');
+  </script>
+</body></html>
