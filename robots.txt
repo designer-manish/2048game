@@ -1,3 +1,2 @@
 User-agent: *
-
 Sitemap: https://www.the2048game.in/sitemap.xml
