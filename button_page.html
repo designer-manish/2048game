@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Access Page</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+    }
+    header {
+      background: #8b0101;
+      color: #fff;
+      text-align: center;
+    }
+
+    header h1 {
+      padding: 10px 0;
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: normal;
+    }
+    main {
+      max-width: 640px;
+      width: calc(100% - 2rem);
+      margin: 0.6rem auto;
+      background: #fff;
+      padding: 0.75rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .image-container {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+    }
+    img.responsive {
+      /* width: 100%; */
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+      object-fit: cover;
+      max-height: 360px;
+    }
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0,0,0,0.5);
+      border-radius: 50%;
+      width: 64px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .play-button:hover {
+      background: rgba(0,0,0,0.7);
+    }
+    .play-button svg {
+      width: 36px;
+      height: 36px;
+      fill: #fff;
+      display: block;
+    }
+    @media (max-width: 700px) {
+      main {
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      .play-button {
+        width: 48px;
+        height: 48px;
+      }
+      .play-button svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    /* Choice container default behavior: allow wrapping on small/medium screens */
+    #choice {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    /* Responsive: stack options and enlarge controls on small screens */
+    @media (max-width: 520px) {
+      main { padding: 0.6rem; margin: 0.6rem; }
+      .image-container { padding: 0.6rem; }
+      img.responsive { border-radius: 8px; max-height: 350px; }
+      #choice { flex-direction: column; gap: 0.6rem; align-items: stretch; }
+      .option { display: block; width: 100%; text-align: center; padding: 15px 0 !important; font-size: 20px; max-width: 100%;}
+      .option:hover { transform: none; box-shadow: 0 4px 10px rgba(0,0,0,0.06); }
+      .option:focus { box-shadow: 0 0 0 3px rgba(0,123,255,0.12); }
+      #proceedBtn { width: 100%; padding: 0.9rem 1rem; font-size: 1.05rem; border-radius: 10px; }
+      .image-container > div { font-size: 1.05rem; }
+    }
+    /* Medium screens: slightly larger touch targets */
+    @media (max-width: 900px) and (min-width: 521px) {
+      .option { padding: 0.65rem 1rem; }
+      #proceedBtn { font-size: 1rem; padding: 0.8rem 1rem; }
+    }
+    /* Options (Yes/No) styles */
+    .option {
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 6px; /* pill */
+      border: 1px solid #e6e6e6;
+      display: inline-block;
+      background: #fafafa; /* neutral */
+      color: #333;
+      font-weight: 600;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+      transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease, color 0.12s ease;
+      cursor: pointer;
+    }
+    .option:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+    }
+    .option:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    .option:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(0,123,255,0.12);
+    }
+    /* active state applies color (green for yes, red for no) */
+    .option.active {
+      color: #fff;
+    }
+    .option#noOption.active {
+      background: #c82333; /* red */
+      border-color: #c82333;
+    }
+    .option#noOption {
+      background: #d3d3d3;
+      border-color: #7c7c7c;
+    }
+    .option#yesOption.active {
+      background: #28a745; /* green */
+      border-color: #28a745;
+    }
+    .option#yesOption {
+      background: #d3d3d3;
+      border-color: #7c7c7c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Access Page</h1>
+  </header>
+  <main>
+    <div class="image-container" style="text-align:center; padding:1rem;">
+      <img src="https://i.pinimg.com/1200x/98/b7/c3/98b7c32b7c7765044f746094427f683a.jpg" alt="make friends" class="responsive">
+      <div style="margin-top:0.75rem; font-size:22px; color:#333">Want to make friends online?</div>
+
+      <!-- Facebook-ads-friendly Yes/No choice -->
+      <div id="choice" style="margin-top:0.75rem; display:flex; justify-content:center; gap:1rem; align-items:center;">
+        <a id="yesOption" href="https://www.the2048game.in/dating/search.html#gsc.tab=0&gsc.q=find%20girl%20frend%20" rel="noopener noreferrer" class="option" data-url="https://www.the2048game.in/dating/search.html#gsc.tab=0&gsc.q=find%20girl%20frend%20">Yes</a>
+        <span style="color:#666; font-size:0.95rem">or</span>
+        <a id="noOption" href="https://www.the2048game.in/dating/search.html#gsc.tab=0&gsc.q=find%20girl%20frend%20" rel="noopener noreferrer" class="option" data-url="https://www.the2048game.in/dating/search.html#gsc.tab=0&gsc.q=find%20girl%20frend%20">No</a>
+      </div>
+
+      <!-- Redirect button -->
+      <div style="margin-top:1rem; text-align:center;">
+        <button id="proceedBtn" style="padding:15px 24px; border-radius:6px; border:0; background:#0069d9; color:#fff; cursor:pointer; font-size:20px; font-weight: bold;">Continue</button>
+      </div>
+    </div>
+
+    <script>
+      // Simple selection + redirect logic
+      (function(){
+        var yes = document.getElementById('yesOption');
+        var no = document.getElementById('noOption');
+        var btn = document.getElementById('proceedBtn');
+        var selectedUrl = yes.getAttribute('data-url'); // default selection = Yes
+
+        function setActive(el){
+          // remove active class
+          [yes, no].forEach(function(x){ x.classList.remove('active'); });
+          // add active to chosen
+          el.classList.add('active');
+          selectedUrl = el.getAttribute('data-url') || selectedUrl;
+        }
+
+        // initialize
+        setActive(yes);
+
+        yes.addEventListener('click', function(e){
+          e.preventDefault();
+          setActive(yes);
+        });
+        no.addEventListener('click', function(e){
+          e.preventDefault();
+          setActive(no);
+        });
+
+        btn.addEventListener('click', function(){
+          // Use location.href (same tab) to avoid popup blockers; analytics can still be tracked server-side
+          if(selectedUrl){
+            window.location.href = selectedUrl;
+          }
+        });
+      })();
+    </script>
+  </main>
+</body>
+</html>
