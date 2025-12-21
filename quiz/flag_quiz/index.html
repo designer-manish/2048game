@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Flag Quiz - Welcome</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .home-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .home-content {
+      text-align: center;
+      max-width: 600px;
+      background: white;
+      padding: 60px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .home-title {
+      font-size: 48px;
+      font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .home-subtitle {
+      font-size: 24px;
+      color: #7f8c8d;
+      margin-bottom: 10px;
+    }
+
+    .home-description {
+      font-size: 16px;
+      color: #7f8c8d;
+      line-height: 1.8;
+      margin-bottom: 40px;
+    }
+
+    .quiz-stats {
+      display: flex;
+      justify-content: space-around;
+      margin: 40px 0;
+      padding: 30px;
+      background: #ecf0f1;
+      border-radius: 8px;
+      gap: 20px;
+    }
+
+    .stat-item {
+      flex: 1;
+    }
+
+    .stat-number {
+      font-size: 36px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 5px;
+    }
+
+    .stat-label {
+      font-size: 14px;
+      color: #7f8c8d;
+      font-weight: 600;
+    }
+
+    .start-button {
+      padding: 16px 50px;
+      font-size: 18px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .start-button:hover {
+      box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+      transform: translateY(-2px);
+    }
+
+    .start-button:active {
+      transform: scale(0.98);
+    }
+
+    .features {
+      margin-top: 50px;
+      text-align: left;
+      padding-top: 40px;
+      border-top: 1px solid #ecf0f1;
+    }
+
+    .features-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .features-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .features-list li {
+      padding: 12px 0;
+      color: #7f8c8d;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+    }
+
+    .features-list li:before {
+      content: "✓";
+      color: #27ae60;
+      font-weight: 700;
+      margin-right: 12px;
+      font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+      .home-content {
+        padding: 40px 25px;
+      }
+
+      .home-title {
+        font-size: 36px;
+      }
+
+      .home-subtitle {
+        font-size: 20px;
+      }
+
+      .quiz-stats {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .start-button {
+        padding: 14px 40px;
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .home-content {
+        padding: 30px 20px;
+      }
+
+      .home-title {
+        font-size: 28px;
+      }
+
+      .home-subtitle {
+        font-size: 18px;
+      }
+
+      .home-description {
+        font-size: 14px;
+      }
+
+      .stat-number {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="home-container">
+    <div class="home-content">
+      <h1 class="home-title">🌍 Country Flag Quiz</h1>
+      <p class="home-subtitle">Test Your Global Knowledge</p>
+      <p class="home-description">
+        Challenge yourself with 15 exciting questions about flags from around the world. 
+        Can you identify countries by their flags?
+      </p>
+
+      <div class="quiz-stats">
+        <div class="stat-item">
+          <div class="stat-number">15</div>
+          <div class="stat-label">Questions</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">∞</div>
+          <div class="stat-label">Retakes</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Free</div>
+        </div>
+      </div>
+
+      <a href="quiz1.html" class="start-button">Start Quiz Now →</a>
+
+      <div class="features">
+        <h3 class="features-title">Why Take This Quiz?</h3>
+        <ul class="features-list">
+          <li>Learn about flags from 15 different countries</li>
+          <li>Track your score with instant feedback</li>
+          <li>Fully responsive and works on all devices</li>
+          <li>No registration or login required</li>
+          <li>Retake as many times as you want</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
