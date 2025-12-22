@@ -814,3 +814,18 @@ h2.title {font-size: 45px;}
 }
 
 .right_ads{position:absolute; top:70px; right:-350px; width: 300px; height: 600px;}
+
+.blinking-button{
+    padding: 8px 35px;
+    border-radius: 48px 0px; 
+    border: 0px solid #4c00ff;
+}
+@keyframes blink {
+  0%, 100% {background-color:#ff0606;}
+  50% {background-color: #4c00ff;}
+}
+.blinking-button {
+  background-color: #4c00ff;
+  color: white;
+  animation: blink 1s linear infinite;
+}
