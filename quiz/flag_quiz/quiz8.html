@@ -13,23 +13,109 @@
   gtag('js', new Date());
   gtag('config', 'G-KLWYP8Y9KD');
 </script>
+
+<!--rewarded -->
+<style>
+.modal .btn {
+padding: .5rem;
+background: #2990ea;
+border: none;
+border-radius: 4px;
+margin: 4px;
+display: none; /* Initially hide the close button */
+}
+.modal p {
+text-align: center;
+}
+</style>
+<script>
+googletag = window.googletag || { cmd: [] };
+googletag.cmd.push(() => {
+const e = localStorage.getItem("hasShownRewardedAd"),
+o = Date.now();
+if (!e || o - parseInt(e, 10) > 6e5) {
+const adSlotRewarded = googletag
+.defineOutOfPageSlot("/23164546956/video", googletag.enums.OutOfPageFormat.REWARDED) // Updated AdUnit Path
+.addService(googletag.pubads());
+
+adSlotRewarded.setForceSafeFrame(true);
+googletag.pubads().enableAsyncRendering();
+googletag.enableServices();
+
+(function () {
+const modal = document.getElementById("rewardModal");
+const closeButton = document.querySelector('.modal .btn');
+
+// Disable back button during ad playback
+window.addEventListener("popstate", function (event) {
+history.pushState(null, null, location.href);
+});
+
+// Event listeners for reward ad
+googletag.pubads().addEventListener("impressionViewable", function () {
+console.log("Impression viewable!");
+
+// Show close button only after 30 seconds
+setTimeout(() => {
+closeButton.style.display = "block";
+}, 30000); // 30 seconds delay for close button
+});
+
+googletag.pubads().addEventListener("slotRenderEnded", function (event) {
+if (event.isEmpty) {
+console.log("Ad is empty or failed to load");
+setTimeout(function () {
+modal.classList.remove("block");
+modal.classList.add("hidden");
+}, 0);
+}
+});
+
+googletag.pubads().addEventListener("rewardedSlotReady", function (event) {
+modal.classList.remove("hidden");
+modal.classList.add("block");
+event.makeRewardedVisible();
+});
+
+googletag.pubads().addEventListener("rewardedSlotClosed", function (event) {
+modal.classList.remove("block");
+modal.classList.add("hidden");
+localStorage.setItem("hasShownRewardedAd", o.toString());
+});
+
+// Ensure ad is displayed
+googletag.display(adSlotRewarded);
+})();
+}
+});
+</script>
+
+<div id="rewardModal" class="hidden modal fixed z-10 pt-80 left-0 top-0 w-full h-full overflow-auto bg-black bg-opacity-5">
+<div class="modal-content m-auto p-6 bg-slate-100 text-center fixed top-2/4 left-2/4 transform -translate-x-2/4 -translate-y-2/4">
+<p>Watch the ad to continue.</p>
+<button class="btn">Close Ad</button>
+</div>
+</div>
+<!--rewarded end -->
+
 </head>
 <body>
   <div class="container">
     <section class="ad-section top">
-            <div class="ad-placeholder">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3508059860160051"
-            crossorigin="anonymous"></script>
-        <!-- Quiz_top -->
-        <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-3508059860160051"
-            data-ad-slot="8304277606"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+              <div class="ad-placeholder">
+        <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23164546956/2048Game/Quiz_1', [[300, 250], [970, 250], [300, 600], [336, 280], [250, 250], [250, 360], [200, 200]], 'div-gpt-ad-1766680659701-0').addService(googletag.pubads());
+    googletag.enableServices();
+  });
+</script><!-- /23164546956/2048Game/Quiz_1 -->
+<div id='div-gpt-ad-1766680659701-0' style='min-width: 200px; min-height: 200px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1766680659701-0'); });
+  </script>
+</div>
       </div>
     </section>
 
@@ -56,19 +142,20 @@
     </section>
 
     <section class="ad-section bottom">
-           <div class="ad-placeholder">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3508059860160051"
-            crossorigin="anonymous"></script>
-        <!-- Quiz_bottom -->
-        <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-3508059860160051"
-            data-ad-slot="9425787588"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+            <div class="ad-placeholder">
+       <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23164546956/2048Game/Quiz_1', [[970, 250], [250, 250], [250, 360], [336, 280], [300, 250], [300, 600], [200, 200]], 'div-gpt-ad-1766680672815-0').addService(googletag.pubads());
+    googletag.enableServices();
+  });
+</script><!-- /23164546956/2048Game/Quiz_1 -->
+<div id='div-gpt-ad-1766680672815-0' style='min-width: 200px; min-height: 200px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1766680672815-0'); });
+  </script>
+</div>
       </div>
     </section>
   </div>
